@@ -5,6 +5,7 @@ import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { Text } from '@/components/ui';
 
 export default function HomeScreen() {
   return (
@@ -16,8 +17,10 @@ export default function HomeScreen() {
           style={styles.reactLogo}
         />
       }>
+        
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title">Welcome all!</ThemedText>
+        <Text className='bg-primary-300'>huhu</Text>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
